@@ -21,7 +21,7 @@ In this assignment, you will style a resume website using CSS.
 ## Part 2: Create!
 
 Style your cv following these [step-by-step instructions](https://docs.google.com/document/d/1_Zpam8eycWh1wazH-_V9HGNCaHtEF6mf9KnPqqevdew/edit?usp=sharing). (20 pts)
------------------
+-------------------
 ### Part 3: Testing locally
 
 After you have completed the style.css file.  You may run the test scripts locally by:
@@ -45,6 +45,7 @@ You are to publish your CV to your own GitHub pages site. This is **NOT** your c
 2. **Provide the link on the class Google sheet** 
 
 The link to the Google sheet is provided in the instructions sheet linked above.
+
 
 
 
