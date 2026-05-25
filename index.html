@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=2.0">
-</head> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4.0">
+</head>
 <body>
     <nav class="sticky-nav">
         <div class="brand"><a href="index.html">Falih Faizal</a></div>
@@ -22,11 +22,12 @@
             <a class="contact-link" href="contact.html">Contact</a>
         </div>
     </nav>
+
     <header class="splash">
       <h1>Falih Faizal</h1>
       <img src="images/IMG_FF37021B287D-1.jpeg" width="200" height="250" alt="Falih Faizal Headshot">
       <p class="address">
-        <a href="mailto:Falih.faizal95@gmail.com"><i class="fas fa-envelope"></i> Falih.faizal95@gmail.com</a> 
+        <a href="mailto:Falih.faizal95@gmail.com"><i class="fas fa-envelope"></i> Falih.faizal95@gmail.com</a>
         <span class="separator">&#x25A0;</span>
         <a href="tel:6789206711"><i class="fas fa-phone"></i> (678) 920-6711</a>
         <span class="separator">&#x25A0;</span>
@@ -34,82 +35,136 @@
         <span class="separator">&#x25A0;</span>
         <a href="https://github.com/falihfaizal95" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </p>
-      <p class="tagline">Computer Science Student at University of Georgia | AI Research Assistant | Full-Stack Developer</p>
+      <p class="tagline">Computer Science Student at the University of Georgia &nbsp;|&nbsp; LDP Intern @ Textron &nbsp;|&nbsp; AI Research Assistant &nbsp;|&nbsp; Full-Stack Developer</p>
     </header>
 
     <main>
+
+    <!-- ======== EDUCATION ======== -->
     <section id="education">
         <h3><i class="fas fa-graduation-cap"></i> Education</h3>
         <div class="experience-card">
-            <div class="exp-header">
-                <h4>University of Georgia</h4>
-                <span class="location">Athens, GA</span>
-            </div>
-            <div class="exp-details">
-                <p class="exp-title">Bachelor of Science in Computer Science | Certification in Artificial Intelligence</p>
-                <p class="exp-date">Expected May 2027</p>
-                <p class="exp-description"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Computing Architecture, Systems Programming, Object Oriented Programming, Software Development II, Database Management, Web Programming, Discrete Mathematics, Linear Algebra, Computer Science I, Computing Ethics, Data Science I, Calculus II</p>
+            <div class="education-card-inner">
+                <div class="uga-logo-wrap">
+                    <img src="images/uga_logo.svg" alt="University of Georgia Logo">
+                </div>
+                <div style="flex:1">
+                    <div class="exp-header">
+                        <h4>University of Georgia</h4>
+                        <span class="location">Athens, GA</span>
+                    </div>
+                    <div class="exp-details">
+                        <p class="exp-title">Bachelor of Science in Computer Science | Certification in Artificial Intelligence</p>
+                        <p class="exp-date">Expected Graduation: December 2026</p>
+                        <p class="exp-description"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Computing Architecture, Systems Programming, Object Oriented Programming, Software Development II, Database Management, Web Programming, Artificial Intelligence, Discrete Mathematics, Linear Algebra, Computing Ethics, Data Science I, Calculus II</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- ======== EXPERIENCE ======== -->
     <section id="experience">
         <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
-        
+
+        <!-- Textron -->
         <div class="experience-card">
             <div class="exp-header">
-                <h4>UGA Agricultural Robotics Lab</h4>
+                <div class="exp-header-left">
+                    <div class="company-logo-wrap">
+                        <img src="images/textron_logo.svg" alt="Textron Logo">
+                    </div>
+                    <h4>Textron</h4>
+                </div>
+                <span class="location">Remote / On-site</span>
+            </div>
+            <div class="exp-details">
+                <p class="exp-title">Leader Development Program (LDP) IT Intern</p>
+                <p class="exp-date">May 2026 – Present</p>
+                <ul class="exp-bullets">
+                    <li>Part of the IT team supporting enterprise technology operations, contributing to process improvement and cross-functional technology initiatives across business units</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- UGA Research -->
+        <div class="experience-card">
+            <div class="exp-header">
+                <div class="exp-header-left">
+                    <div class="company-logo-wrap">
+                        <img src="images/uga_logo.svg" alt="UGA Logo">
+                    </div>
+                    <h4>UGA Agricultural Robotics Lab</h4>
+                </div>
                 <span class="location">Athens, GA</span>
             </div>
             <div class="exp-details">
                 <p class="exp-title">Undergraduate Research Assistant</p>
-                <p class="exp-date">August 2025 - Present</p>
+                <p class="exp-date">August 2025 – May 2026</p>
                 <ul class="exp-bullets">
-                    <li>Collaborated with Professor Sultan Mahmud to design and build an autonomous poultry-farm robot, integrating navigation software and eco-friendly features to enhance animal welfare and operational efficiency</li>
-                    <li>Designed and tested autonomous-navigation logic on Raspberry Pi using Python, integrating motor-control scripts and ultrasonic-sensor feedback; refined turning behavior and reduced navigation errors across repeated indoor trials</li>
+                    <li>Developed and evaluated autonomous navigation functionality for a poultry-farm rover, focusing on sensor-driven movement logic and on-device computation to support controlled indoor testing environments</li>
+                    <li>Implemented and tested autonomous navigation algorithms on Raspberry Pi using Python, integrating motor-control scripts with ultrasonic sensor feedback to detect obstacles, tune turning behavior, and reduce navigation errors by ~30% across 20+ indoor trial runs</li>
                 </ul>
             </div>
         </div>
 
+        <!-- Trinity Health -->
         <div class="experience-card">
             <div class="exp-header">
-                <h4>Trinity Health</h4>
-                <span class="location">Remote/On-site</span>
+                <div class="exp-header-left">
+                    <div class="company-logo-wrap">
+                        <img src="images/trinity_logo.svg" alt="Trinity Health Logo">
+                    </div>
+                    <h4>Trinity Health</h4>
+                </div>
+                <span class="location">Remote / On-site</span>
             </div>
             <div class="exp-details">
                 <p class="exp-title">Information Systems Intern</p>
-                <p class="exp-date">May 2025 - August 2025</p>
+                <p class="exp-date">May 2025 – August 2025</p>
                 <ul class="exp-bullets">
                     <li>Utilized Darik's Boot and Nuke and disk cloning software to securely wipe, reimage, and deploy 150+ computers and devices, ensuring standardized configurations and efficient rollouts across departments</li>
-                    <li>Audited IT assets and troubleshot hardware/software issues at user endpoints, improving inventory accuracy and reducing downtime for 200+ staff members, ultimately streamlining IT support operations and enhancing overall service reliability</li>
-                    <li>Supported configuration and maintenance of 30+ network devices (access points, switches), strengthening building-wide connectivity and reducing network-related service tickets by 25%, while contributing to stable and scalable network infrastructure</li>
+                    <li>Audited IT assets and troubleshot hardware/software issues at user endpoints, improving inventory accuracy and reducing downtime for 200+ staff members, streamlining IT support operations and enhancing overall service reliability</li>
+                    <li>Supported configuration and maintenance of 30+ network devices (access points, switches), strengthening building-wide connectivity and reducing network-related service tickets by 25%</li>
                 </ul>
             </div>
         </div>
 
+        <!-- FreeWorld Empire -->
         <div class="experience-card">
             <div class="exp-header">
-                <h4>FreeWorld Empire</h4>
+                <div class="exp-header-left">
+                    <div class="company-logo-wrap">
+                        <img src="images/freeworld_logo.svg" alt="FreeWorld Empire Logo">
+                    </div>
+                    <h4>FreeWorld Empire</h4>
+                </div>
                 <span class="location">Remote</span>
             </div>
             <div class="exp-details">
                 <p class="exp-title">UI/UX Intern</p>
-                <p class="exp-date">January 2025 - May 2025</p>
+                <p class="exp-date">January 2025 – May 2025</p>
                 <ul class="exp-bullets">
-                    <li>Developed and customized responsive web interfaces using React and Node.js, applying user-centered design principles, WCAG accessibility standards, improving cross-platform usability and performance</li>
+                    <li>Developed and customized responsive web interfaces using React and Node.js, applying user-centered design principles and WCAG accessibility standards, improving cross-platform usability and performance</li>
                     <li>Conducted layout audits and implemented UX heuristics that reduced user drop-off rates by 20% on key pages; optimized site architecture and navigation through iterative design cycles, A/B testing, and performance analytics review</li>
                 </ul>
             </div>
         </div>
 
+        <!-- SolutionZ -->
         <div class="experience-card">
             <div class="exp-header">
-                <h4>SolutionZ Inc.</h4>
+                <div class="exp-header-left">
+                    <div class="company-logo-wrap">
+                        <img src="images/solutionz_logo.svg" alt="SolutionZ Inc. Logo">
+                    </div>
+                    <h4>SolutionZ Inc.</h4>
+                </div>
                 <span class="location">Georgia</span>
             </div>
             <div class="exp-details">
                 <p class="exp-title">Information Technology Intern</p>
-                <p class="exp-date">August 2022 - February 2023</p>
+                <p class="exp-date">August 2022 – February 2023</p>
                 <ul class="exp-bullets">
                     <li>Collaborated with 4 interns to allocate $50,000+ in grants to 20+ Georgia schools, expanding technology access; optimized network security and AV systems in 15+ conference rooms to boost data protection and collaboration</li>
                     <li>Gained hands-on experience in network troubleshooting, software deployment, and AV technology integration within corporate environments, improving operational efficiency and supporting seamless day-to-day business functions</li>
@@ -117,20 +172,49 @@
             </div>
         </div>
     </section>
+
+    <!-- ======== PROJECTS ======== -->
     <section id="projects">
         <h3><i class="fas fa-code"></i> Personal Projects</h3>
         <div class="three-col">
+
+          <!-- SeatScout -->
+          <a href="https://seatscout-build.vercel.app" target="_blank" class="card-link">
+            <div class="card">
+              <div class="card-header">
+                <h4>
+                  <span style="color:#1e293b">Seat</span><span style="color:#7c6af7">Scout</span>
+                </h4>
+                <span class="project-date">2025 – Present</span>
+              </div>
+              <img src="images/seatscout_card.svg" alt="SeatScout Project">
+              <ul class="project-list">
+                  <li>Built a full-stack ticket price comparison platform aggregating listings from major resale markets, helping users find the cheapest seats for sports and entertainment events in real time</li>
+                  <li>Engineered a Next.js + TypeScript frontend with a dark, responsive UI and integrated backend adapters for multiple ticketing APIs including SeatGeek, delivering fast search and filter experiences</li>
+                  <li>Deployed on Vercel with authentication via Clerk, enabling personalized watchlists, saved searches, and user-specific event tracking across devices</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Clerk</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- LectureAI -->
           <a href="https://lecture-summarizer-lrzj58j8e-falih-faizals-projects.vercel.app" target="_blank" class="card-link">
             <div class="card">
               <div class="card-header">
                 <h4>LectureAI</h4>
-                <span class="project-date">July 2025 - Present</span>
+                <span class="project-date">July 2025 – Present</span>
               </div>
               <img src="images/proj1_img.png" width="300" height="200" alt="LectureAI Project Image" onerror="this.style.display='none'">
               <ul class="project-list">
                   <li>Built LectureAI, a Next.js 14 + TypeScript app converting lecture recordings and YouTube videos into AI study notes, summaries, and key term definitions. Achieved 95%+ transcription accuracy and cut manual note-taking effort by 60%+</li>
-                  <li>Engineered a Supabase-powered dashboard with AI-generated quizzes and progress tracking, delivering a mobile-first, responsive UI (Tailwind CSS + React). Processes 60-minute lectures in under 10 minutes and supports 100+ students across devices</li>
-                  <li>Deployed on Vercel with auto-updates from GitHub; scaled to handle 500+ lecture uploads with &lt;5% error rate, boosting accessibility and engagement for students using diverse file formats (MP3, WAV, MP4, YouTube)</li>
+                  <li>Engineered a Supabase-powered dashboard with AI-generated quizzes and progress tracking, delivering a mobile-first, responsive UI (Tailwind CSS + React). Processes 60-minute lectures in under 10 minutes</li>
+                  <li>Deployed on Vercel with auto-updates from GitHub; scaled to handle 500+ lecture uploads with &lt;5% error rate</li>
               </ul>
               <div class="tech-tags">
                 <span class="tag">Next.js</span>
@@ -141,17 +225,19 @@
               </div>
             </div>
           </a>
+
+          <!-- Vibra -->
           <a href="https://github.com/falihfaizal95/Vibra" target="_blank" class="card-link">
             <div class="card">
               <div class="card-header">
                 <h4>Vibra</h4>
-                <span class="project-date">August 2024 - Present</span>
+                <span class="project-date">August 2024 – Present</span>
               </div>
               <img src="images/proj2.png" width="300" height="200" alt="Vibra Project Image">
               <ul class="project-list">
-                  <li>Built a JavaFX desktop application integrating the Apple Music/iTunes API to search and display multimedia (songs, albums, artists, movies), with interactive gallery layouts, progress tracking, and randomized content refresh</li>
-                  <li>Designed a modular OOP architecture in Java with inheritance, polymorphism, and interfaces; added robust error handling, async API requests, and caching to deliver 95%+ query accuracy and seamless user experience across 1,000s of entries</li>
-                  <li>Improved reliability with 50+ JUnit tests, Maven dependency management, and Git version control; packaged via Maven Shade/JavaFX plugin for executable, cross-platform distribution</li>
+                  <li>Built a JavaFX desktop application integrating the Apple Music/iTunes API to search and display multimedia (songs, albums, artists, movies), with interactive gallery layouts and randomized content refresh</li>
+                  <li>Designed a modular OOP architecture in Java with inheritance, polymorphism, and interfaces; added robust error handling, async API requests, and caching to deliver 95%+ query accuracy</li>
+                  <li>Improved reliability with 50+ JUnit tests, Maven dependency management, and Git version control; packaged via Maven Shade/JavaFX plugin for cross-platform distribution</li>
               </ul>
               <div class="tech-tags">
                 <span class="tag">Java</span>
@@ -162,16 +248,18 @@
               </div>
             </div>
           </a>
+
+          <!-- BookNook -->
           <a href="https://github.com/falihfaizal95/BookNook" target="_blank" class="card-link">
             <div class="card">
               <div class="card-header">
                 <h4>BookNook</h4>
-                <span class="project-date">May 2024 - Present</span>
+                <span class="project-date">May 2024 – Present</span>
               </div>
               <img src="images/proj2_img.png" width="300" height="200" alt="BookNook Project Image">
               <ul class="project-list">
-                  <li>Built a cross-platform JavaFX desktop app integrating dictionary and book APIs to deliver 10,000+ word definitions, phonetics audio, synonyms/antonyms, and book metadata with cover images, with split-view navigation, multilingual support, and accessibility theming using Maven, Gson, and JavaFX 21</li>
-                  <li>Enhanced usability with offline mode, flashcards, favorites/history, and data export, while optimizing API requests with caching and async pipelines to cut latency by 40%, and packaging via jpackage for seamless desktop installation</li>
+                  <li>Built a cross-platform JavaFX desktop app integrating dictionary and book APIs to deliver 10,000+ word definitions, phonetics audio, synonyms/antonyms, and book metadata with cover images</li>
+                  <li>Enhanced usability with offline mode, flashcards, favorites/history, and data export, while optimizing API requests with caching and async pipelines to cut latency by 40%</li>
               </ul>
               <div class="tech-tags">
                 <span class="tag">Java</span>
@@ -182,9 +270,11 @@
               </div>
             </div>
           </a>
+
         </div>
     </section>
-    
+
+    <!-- ======== SKILLS ======== -->
     <section id="skills">
         <h3><i class="fas fa-tools"></i> Technical Skills</h3>
         <div class="skills-container">
@@ -234,9 +324,9 @@
             <div class="skill-category">
                 <h4><i class="fas fa-certificate"></i> Certifications</h4>
                 <div class="cert-list">
-                    <p><strong>Responsive Web Design with HTML</strong> - FreeCodeCamp</p>
-                    <p><strong>CCSMM Cybersecurity Program Development</strong> - March 2025</p>
-                    <p><strong>Google Foundations of Cybersecurity</strong> - June 2025</p>
+                    <p><strong>Responsive Web Design with HTML</strong> — FreeCodeCamp</p>
+                    <p><strong>CCSMM Cybersecurity Program Development</strong> — March 2025</p>
+                    <p><strong>Google Foundations of Cybersecurity</strong> — June 2025</p>
                 </div>
             </div>
         </div>
@@ -255,7 +345,7 @@
             <div class="tool-panels">
                 <div class="tool-panel active" data-tool="nextjs">
                     <h5>Next.js</h5>
-                    <p>I use Next.js 14 with TypeScript to build full-stack, production-ready applications like LectureAI, combining server-side rendering, API routes, and modern React patterns.</p>
+                    <p>I use Next.js 14 with TypeScript to build full-stack, production-ready applications like LectureAI and SeatScout, combining server-side rendering, API routes, and modern React patterns.</p>
                     <ul>
                         <li>Built LectureAI's front-end and back-end with file upload, auth, and dashboard flows.</li>
                         <li>Optimized performance with dynamic routing, caching, and incremental static regeneration.</li>
@@ -297,14 +387,16 @@
                     <h5>Vercel</h5>
                     <p>Vercel is my go-to platform for deploying modern web apps with Git-based workflows.</p>
                     <ul>
-                        <li>Deployed LectureAI with automatic previews and production deployments from GitHub.</li>
+                        <li>Deployed LectureAI and SeatScout with automatic previews and production deployments from GitHub.</li>
                         <li>Monitored performance and improved Core Web Vitals for a smoother user experience.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
     </main>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 <a href="index.html">Falih Faizal</a>. All rights reserved.</p>
@@ -333,15 +425,11 @@
         toolPills.forEach((pill) => {
           pill.addEventListener('click', () => {
             const target = pill.getAttribute('data-tool');
-
             toolPills.forEach((p) => p.classList.remove('active'));
             toolPanels.forEach((panel) => panel.classList.remove('active'));
-
             pill.classList.add('active');
-            const activePanel = document.querySelector('.tool-panel[data-tool=\"' + target + '\"]');
-            if (activePanel) {
-              activePanel.classList.add('active');
-            }
+            const activePanel = document.querySelector('.tool-panel[data-tool="' + target + '"]');
+            if (activePanel) activePanel.classList.add('active');
           });
         });
       });

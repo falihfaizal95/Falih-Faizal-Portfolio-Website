@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <rect width="200" height="80" fill="#ffffff" rx="6"/>
+  <!-- Trinity cross symbol -->
+  <rect x="18" y="20" width="10" height="40" fill="#00539B" rx="2"/>
+  <rect x="10" y="28" width="26" height="10" fill="#00539B" rx="2"/>
+  <!-- Trinity Health text -->
+  <text x="50" y="36" font-family="'Georgia', serif" font-size="15" font-weight="700" fill="#00539B">Trinity</text>
+  <text x="50" y="55" font-family="'Georgia', serif" font-size="15" font-weight="700" fill="#00539B">Health</text>
+</svg>

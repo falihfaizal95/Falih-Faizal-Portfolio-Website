@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240" width="220" height="240">
+  <!-- Arch crest top (black rectangle) -->
+  <rect x="55" y="10" width="110" height="95" fill="#1a1a1a" rx="3"/>
+
+  <!-- White arch columns -->
+  <!-- Left column -->
+  <rect x="70" y="30" width="12" height="65" fill="white"/>
+  <!-- Center-left column -->
+  <rect x="91" y="30" width="12" height="65" fill="white"/>
+  <!-- Center-right column -->
+  <rect x="112" y="30" width="12" height="65" fill="white"/>
+  <!-- Right column -->
+  <rect x="133" y="30" width="12" height="65" fill="white"/>
+
+  <!-- Arch connecting top (white) -->
+  <path d="M70,30 Q110,8 145,30" fill="none" stroke="white" stroke-width="8"/>
+
+  <!-- Column base rectangle white -->
+  <rect x="65" y="93" width="90" height="8" fill="white"/>
+
+  <!-- Red shield bottom -->
+  <path d="M55,100 L165,100 L165,120 Q165,145 110,158 Q55,145 55,120 Z" fill="#BA0C2F"/>
+
+  <!-- 1785 text in white on red shield -->
+  <text x="110" y="137" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="white" letter-spacing="1">1785</text>
+
+  <!-- Registered mark -->
+  <text x="168" y="105" font-family="Arial" font-size="9" fill="#555">®</text>
+
+  <!-- UNIVERSITY OF text -->
+  <text x="110" y="185" text-anchor="middle" font-family="'Arial', sans-serif" font-size="13" font-weight="700" fill="#1a1a1a" letter-spacing="2.5">UNIVERSITY OF</text>
+
+  <!-- GEORGIA text -->
+  <text x="110" y="222" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#BA0C2F" letter-spacing="1">GEORGIA</text>
+</svg>
