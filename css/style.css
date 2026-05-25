@@ -231,12 +231,22 @@ header img:hover {
 
 .tagline {
   margin: 1.5rem auto 0;
-  max-width: 65ch;
+  max-width: 900px;
   color: #64748b;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
-  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.tagline-sep {
+  color: #cbd5e1;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
