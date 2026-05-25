@@ -181,6 +181,7 @@ header img {
   width: 220px;
   height: 270px;
   object-fit: cover;
+  object-position: center 50%;
   border: 5px solid #ffffff;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -235,6 +236,13 @@ header img:hover {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .tagline {
+    white-space: normal;
+  }
 }
 
 /************* Sections ********************/
@@ -354,10 +362,25 @@ section h3 i {
 .exp-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.company-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.exp-header > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .exp-header h4 {
