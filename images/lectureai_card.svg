@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f4ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="200" fill="url(#bg)"/>
+
+  <!-- Subtle bottom border line like the screenshot -->
+  <line x1="0" y1="199" x2="600" y2="199" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- LectureAI text — bold blue matching the screenshot -->
+  <text
+    x="300"
+    y="118"
+    text-anchor="middle"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="700"
+    font-size="58"
+    fill="#2563eb"
+    letter-spacing="-1">LectureAI</text>
+</svg>
