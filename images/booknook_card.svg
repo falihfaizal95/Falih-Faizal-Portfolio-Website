@@ -4,86 +4,85 @@
       <stop offset="0%" style="stop-color:#2d1b0e"/>
       <stop offset="100%" style="stop-color:#1a0f06"/>
     </linearGradient>
-    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="spineRed" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#c0392b"/>
       <stop offset="100%" style="stop-color:#e74c3c"/>
     </linearGradient>
     <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f5e6d3"/>
+      <stop offset="0%" style="stop-color:#f0e0c8"/>
       <stop offset="100%" style="stop-color:#fffaf5"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
   </defs>
 
   <!-- Background -->
   <rect width="600" height="200" fill="url(#bgGrad)"/>
 
-  <!-- Subtle wood grain lines -->
-  <line x1="0" y1="40" x2="600" y2="40" stroke="#3d2510" stroke-width="0.5" opacity="0.5"/>
-  <line x1="0" y1="80" x2="600" y2="80" stroke="#3d2510" stroke-width="0.5" opacity="0.5"/>
-  <line x1="0" y1="120" x2="600" y2="120" stroke="#3d2510" stroke-width="0.5" opacity="0.5"/>
-  <line x1="0" y1="160" x2="600" y2="160" stroke="#3d2510" stroke-width="0.5" opacity="0.5"/>
+  <!-- Subtle grain lines -->
+  <line x1="0" y1="50"  x2="600" y2="50"  stroke="#3d2510" stroke-width="0.4" opacity="0.4"/>
+  <line x1="0" y1="100" x2="600" y2="100" stroke="#3d2510" stroke-width="0.4" opacity="0.4"/>
+  <line x1="0" y1="150" x2="600" y2="150" stroke="#3d2510" stroke-width="0.4" opacity="0.4"/>
 
-  <!-- Book group centered left of text -->
-  <!-- Book 1 (tallest, red spine) -->
-  <rect x="155" y="52" width="14" height="96" rx="1" fill="url(#spineGrad)"/>
-  <rect x="169" y="58" width="22" height="90" rx="1" fill="url(#pageGrad)"/>
-  <rect x="169" y="58" width="2" height="90" fill="#e8d5c0"/>
-  <!-- Book lines on pages -->
-  <line x1="175" y1="70" x2="187" y2="70" stroke="#c4a882" stroke-width="1"/>
-  <line x1="175" y1="76" x2="187" y2="76" stroke="#c4a882" stroke-width="1"/>
-  <line x1="175" y1="82" x2="187" y2="82" stroke="#c4a882" stroke-width="1"/>
+  <!-- ── BOOKS (centered x≈175 in the visible window) ── -->
 
-  <!-- Book 2 (medium, deep teal spine) -->
-  <rect x="193" y="65" width="13" height="83" rx="1" fill="#1a6b5a"/>
-  <rect x="206" y="70" width="20" height="78" rx="1" fill="url(#pageGrad)"/>
-  <rect x="206" y="70" width="2" height="78" fill="#e8d5c0"/>
-  <line x1="211" y1="82" x2="222" y2="82" stroke="#c4a882" stroke-width="1"/>
-  <line x1="211" y1="88" x2="222" y2="88" stroke="#c4a882" stroke-width="1"/>
+  <!-- Book 1 – red spine (tallest) -->
+  <rect x="148" y="50" width="14" height="100" rx="1" fill="url(#spineRed)"/>
+  <rect x="162" y="56" width="22" height="94"  rx="1" fill="url(#pageGrad)"/>
+  <rect x="162" y="56" width="3"  height="94"  fill="#ddc8a8"/>
+  <line x1="168" y1="70" x2="180" y2="70" stroke="#b89870" stroke-width="1"/>
+  <line x1="168" y1="77" x2="180" y2="77" stroke="#b89870" stroke-width="1"/>
+  <line x1="168" y1="84" x2="180" y2="84" stroke="#b89870" stroke-width="1"/>
 
-  <!-- Book 3 (short, golden/amber spine) -->
-  <rect x="227" y="76" width="12" height="72" rx="1" fill="#b8860b"/>
-  <rect x="239" y="80" width="18" height="68" rx="1" fill="url(#pageGrad)"/>
-  <rect x="239" y="80" width="2" height="68" fill="#e8d5c0"/>
-  <line x1="244" y1="92" x2="253" y2="92" stroke="#c4a882" stroke-width="1"/>
+  <!-- Book 2 – teal spine -->
+  <rect x="185" y="62" width="13" height="88" rx="1" fill="#1a6b5a"/>
+  <rect x="198" y="67" width="20" height="83" rx="1" fill="url(#pageGrad)"/>
+  <rect x="198" y="67" width="3"  height="83" fill="#ddc8a8"/>
+  <line x1="204" y1="80" x2="214" y2="80" stroke="#b89870" stroke-width="1"/>
+  <line x1="204" y1="87" x2="214" y2="87" stroke="#b89870" stroke-width="1"/>
 
-  <!-- Shelf / bottom line -->
-  <rect x="148" y="148" width="118" height="5" rx="1" fill="#6b3d1e"/>
-  <rect x="148" y="153" width="118" height="3" rx="1" fill="#8b5e3c" opacity="0.5"/>
+  <!-- Book 3 – olive/amber spine (shortest) -->
+  <rect x="219" y="72" width="12" height="78" rx="1" fill="#8a7a20"/>
+  <rect x="231" y="76" width="18" height="74" rx="1" fill="url(#pageGrad)"/>
+  <rect x="231" y="76" width="3"  height="74" fill="#ddc8a8"/>
+  <line x1="237" y1="90" x2="246" y2="90" stroke="#b89870" stroke-width="1"/>
 
-  <!-- Warm glow behind text -->
-  <ellipse cx="390" cy="100" rx="155" ry="45" fill="#c0392b" opacity="0.08"/>
+  <!-- Shelf -->
+  <rect x="140" y="150" width="116" height="6" rx="1" fill="#6b3d1e"/>
+  <rect x="140" y="156" width="116" height="3" rx="1" fill="#8b5e3c" opacity="0.5"/>
 
-  <!-- BookNook text -->
-  <!-- "Book" in warm cream -->
+  <!-- ── TEXT (centered at x=390, within visible x=140–460) ── -->
+
+  <!-- Warm glow -->
+  <ellipse cx="390" cy="98" rx="130" ry="42" fill="#d4520a" opacity="0.09"/>
+
+  <!-- "Book" flush-right to center-point x=388 -->
   <text
-    x="305"
-    y="115"
-    font-family="'Georgia', 'Times New Roman', serif"
+    x="388"
+    y="118"
+    text-anchor="end"
+    font-family="Georgia, 'Times New Roman', serif"
     font-weight="700"
-    font-size="52"
+    font-size="54"
     fill="#f5e6d3"
     letter-spacing="-1">Book</text>
-  <!-- "Nook" in warm amber/orange -->
+
+  <!-- "Nook" flush-left from center-point x=388 -->
   <text
-    x="420"
-    y="115"
-    font-family="'Georgia', 'Times New Roman', serif"
+    x="390"
+    y="118"
+    text-anchor="start"
+    font-family="Georgia, 'Times New Roman', serif"
     font-weight="700"
-    font-size="52"
+    font-size="54"
     fill="#e67e22"
     letter-spacing="-1">Nook</text>
 
-  <!-- Tagline -->
+  <!-- Tagline centered at x=390 -->
   <text
     x="390"
-    y="140"
+    y="143"
     text-anchor="middle"
-    font-family="'Arial', sans-serif"
-    font-size="12"
+    font-family="Arial, sans-serif"
+    font-size="11"
     fill="#a07850"
-    letter-spacing="2">YOUR DIGITAL BOOKSHELF</text>
+    letter-spacing="2.5">YOUR DIGITAL BOOKSHELF</text>
 </svg>
