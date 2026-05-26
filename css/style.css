@@ -309,17 +309,106 @@ section h3 i {
 .experience-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border-left: 4px solid #2563eb;
+  border-radius: 12px;
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .experience-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  border-color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+}
+
+.experience-card.exp-current {
+  border-left-color: #2563eb;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.exp-company {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.2rem;
+}
+
+.exp-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0;
+}
+
+.exp-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.exp-date-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.exp-badge-current {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.exp-location {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-bullets li {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.6rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.exp-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.exp-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-size: 0.8rem;
+  top: 0.1rem;
 }
 
 /* Education card inner layout with UGA logo */
@@ -341,88 +430,18 @@ section h3 i {
   border-radius: 6px;
 }
 
-/* Company logo in experience cards */
-.exp-header-left {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.company-logo-wrap {
-  flex-shrink: 0;
-  width: 52px;
-  height: 52px;
-  background: #f8f9fa;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 4px;
-}
-
-.company-logo-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.company-logo-wide {
-  width: 110px;
-  height: 38px;
-  padding: 6px 8px;
-}
-
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.company-logo {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-  margin-right: 1rem;
-  flex-shrink: 0;
-}
-
-.exp-header > div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.exp-header h4 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0;
-}
-
-.location {
-  color: #64748b;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
+/* Keep these for education card reuse */
 .exp-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #2563eb;
-  margin: 0.5rem 0;
+  margin: 0.4rem 0 0.2rem;
 }
 
 .exp-date {
   color: #64748b;
-  font-size: 0.95rem;
-  margin: 0.25rem 0 1rem;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
   font-weight: 500;
 }
 
@@ -430,28 +449,6 @@ section h3 i {
   color: #475569;
   line-height: 1.7;
   margin: 0.5rem 0;
-}
-
-.exp-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-}
-
-.exp-bullets li {
-  color: #475569;
-  line-height: 1.8;
-  margin-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.exp-bullets li::before {
-  content: '▸';
-  position: absolute;
-  left: 0;
-  color: #2563eb;
-  font-weight: bold;
 }
 
 /**************   Projects   *****************/
