@@ -328,18 +328,13 @@ section h3 i {
 
 .uga-logo-wrap {
   flex-shrink: 0;
-  width: 70px;
-  height: 70px;
+  width: 230px;
 }
 
 .uga-logo-wrap img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  object-fit: contain;
-  background: #f8f9fa;
-  padding: 4px;
-  border: 1px solid #e2e8f0;
+  width: 230px;
+  height: auto;
+  display: block;
 }
 
 /* Company logo in experience cards */
