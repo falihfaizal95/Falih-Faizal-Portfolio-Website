@@ -18,6 +18,7 @@
         <div class="nav-links">
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#certifications">Certifications</a>
@@ -165,6 +166,78 @@
                 <li>Collaborated with 4 interns to allocate $50,000+ in grants to 20+ Georgia schools, expanding technology access; optimized network security and AV systems in 15+ conference rooms to boost data protection and collaboration</li>
                 <li>Gained hands-on experience in network troubleshooting, software deployment, and AV technology integration within corporate environments, improving operational efficiency and supporting seamless day-to-day business functions</li>
             </ul>
+        </div>
+    </section>
+
+    <!-- ======== RESEARCH ======== -->
+    <section id="research">
+        <h3><i class="fas fa-flask"></i> Undergraduate Research</h3>
+
+        <div class="research-card">
+          <!-- ── Left: content ── -->
+          <div class="research-main">
+
+            <div class="research-meta-row">
+              <span class="research-inst-badge">
+                <img src="images/uga_logo_official.png" alt="UGA">
+                UGA Agricultural Robotics Lab
+              </span>
+              <span class="research-date-badge">Aug 2025 – May 2026</span>
+              <span class="research-curo-badge">🎓 CURO Symposium Presenter</span>
+            </div>
+
+            <h4 class="research-title">Development of Control Schemes for Autonomous Indoor Navigation of Ground Robot in GPS-Denied Environments</h4>
+            <p class="research-sub">VIPR Research Team &nbsp;·&nbsp; Mentors: Dr. Guoming Li &amp; Mr. Venkat UC Bodempudi &nbsp;·&nbsp; School of Computing &amp; Institute for AI, UGA</p>
+
+            <ul class="research-bullets">
+              <li>Developed an autonomous indoor navigation framework for a WaveShare UGV01 agricultural rover operating in a GPS-denied poultry farm environment, integrating Marvelmind ultrasonic beacons for real-time (X,Y) coordinate tracking over a UDP connection to a Raspberry Pi</li>
+              <li>Reverse-engineered the rover's entirely undocumented HTTP motor interface by analyzing live XHR/Fetch requests in the browser network tab, then replicated the JSON-formatted GET commands in Python — enabling fully autonomous rover movement without the control panel for the first time</li>
+              <li>Wrote 4 modular Python control scripts (forward, backward, forward-turns, backward-turns) achieving straight-line navigation over 20+ meters with an average path deviation of just 0.10 m, and turn-based movements in 4 cardinal directions</li>
+              <li>Conducted 50 structured navigation trials in the UGA Poultry Science Building, achieving a 68% destination success rate (34/50 runs); presented findings at the UGA CURO Symposium (Spring 2026) and co-authored a research report in ASABE journal format</li>
+              <li>Configured the full Raspberry Pi + SSH pipeline over the UGV WiFi network and installed the Marvelmind SW Pack (v8.101) dashboard, establishing the hardware-software foundation for future multi-rover, multi-beacon agricultural deployments</li>
+            </ul>
+
+            <!-- stat bar -->
+            <div class="research-stats">
+              <div class="res-stat">
+                <span class="res-stat-num">50</span>
+                <span class="res-stat-label">Navigation Trials</span>
+              </div>
+              <div class="res-stat">
+                <span class="res-stat-num">68%</span>
+                <span class="res-stat-label">Success Rate</span>
+              </div>
+              <div class="res-stat">
+                <span class="res-stat-num">0.10m</span>
+                <span class="res-stat-label">Avg. Deviation</span>
+              </div>
+              <div class="res-stat">
+                <span class="res-stat-num">20m+</span>
+                <span class="res-stat-label">Nav. Range</span>
+              </div>
+              <div class="res-stat">
+                <span class="res-stat-num">4</span>
+                <span class="res-stat-label">Control Scripts</span>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">HTTP / JSON</span>
+              <span class="tag">UDP</span>
+              <span class="tag">Marvelmind</span>
+              <span class="tag">Linux</span>
+              <span class="tag">WaveShare UGV01</span>
+              <span class="tag">SSH</span>
+            </div>
+          </div>
+
+          <!-- ── Right: rover images ── -->
+          <div class="research-img-col">
+            <img src="images/rover_lab.jpeg" alt="WaveShare UGV01 rover with Marvelmind beacon mounted, in the UGA lab">
+            <img src="images/rover_testing.png" alt="Live navigation test of the rover in the Poultry Science Building">
+          </div>
         </div>
     </section>
 
