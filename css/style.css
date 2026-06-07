@@ -372,8 +372,6 @@ header img:hover {
   background: #ffffff;
   border-radius: 14px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0 24px 64px rgba(0,0,0,0.3);
   animation: modalIn 0.25s ease;
 }
@@ -384,17 +382,20 @@ header img:hover {
 }
 
 .resume-modal-header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 52px;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 1.25rem;
+  padding: 0 1.25rem;
   border-bottom: 1px solid #e2e8f0;
   background: #f8fafc;
   font-family: 'Poppins', sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
   color: #1e293b;
-  flex-shrink: 0;
 }
 
 .resume-modal-close {
@@ -418,9 +419,10 @@ header img:hover {
 }
 
 .resume-pdf-container {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
+  position: absolute;
+  top: 52px; left: 0; right: 0; bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background: #525659;
   padding: 1rem;
   display: flex;
@@ -439,7 +441,9 @@ header img:hover {
 .resume-pdf-loading {
   color: #cbd5e1;
   font-size: 0.9rem;
-  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   gap: 0.5rem;
