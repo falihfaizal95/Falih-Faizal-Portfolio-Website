@@ -419,6 +419,7 @@ header img:hover {
 
 .resume-pdf-container {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   background: #525659;
   padding: 1rem;
