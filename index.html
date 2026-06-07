@@ -47,10 +47,28 @@
         <span class="tagline-sep">|</span>
         <span>Full-Stack Developer</span>
       </p>
-      <a class="resume-btn" href="Falih_Faizal_Resume.pdf" download="Falih_Faizal_Resume.pdf">
-        <i class="fas fa-download"></i> Download Resume
-      </a>
+      <!-- Resume card -->
+      <div class="resume-card-preview" id="resumeCardBtn" role="button" tabindex="0" aria-label="View resume">
+        <div class="resume-card-icon"><i class="fas fa-file-alt"></i></div>
+        <div class="resume-card-info">
+          <span class="resume-card-title">Resume</span>
+          <span class="resume-card-sub">Falih Faizal &nbsp;·&nbsp; 2026</span>
+        </div>
+        <i class="fas fa-expand-alt resume-card-expand"></i>
+      </div>
     </header>
+
+    <!-- Resume modal -->
+    <div class="resume-modal" id="resumeModal" aria-hidden="true">
+      <div class="resume-modal-overlay" id="resumeModalOverlay"></div>
+      <div class="resume-modal-content">
+        <div class="resume-modal-header">
+          <span><i class="fas fa-file-alt"></i>&nbsp; Falih Faizal — Resume</span>
+          <button class="resume-modal-close" id="resumeModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <iframe src="Falih_Faizal_Resume.pdf" title="Falih Faizal Resume"></iframe>
+      </div>
+    </div>
 
     <main>
 
@@ -615,6 +633,31 @@
           });
         });
       });
+    </script>
+
+    <script>
+      // Resume modal
+      const resumeModal   = document.getElementById('resumeModal');
+      const resumeCardBtn = document.getElementById('resumeCardBtn');
+      const resumeOverlay = document.getElementById('resumeModalOverlay');
+      const resumeClose   = document.getElementById('resumeModalClose');
+
+      function openResume() {
+        resumeModal.classList.add('active');
+        resumeModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeResume() {
+        resumeModal.classList.remove('active');
+        resumeModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      resumeCardBtn.addEventListener('click', openResume);
+      resumeCardBtn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openResume(); });
+      resumeOverlay.addEventListener('click', closeResume);
+      resumeClose.addEventListener('click', closeResume);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeResume(); });
     </script>
 </body>
 </html>
