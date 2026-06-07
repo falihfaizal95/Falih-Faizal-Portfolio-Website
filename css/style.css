@@ -1019,6 +1019,7 @@ button:active {
   .cert-gallery {
     grid-template-columns: 1fr;
   }
+}
 
 /* ── Research Section ── */
 .research-card {
@@ -1028,7 +1029,7 @@ button:active {
   border-radius: 12px;
   padding: 2rem;
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: flex-start;
 }
 
@@ -1120,12 +1121,12 @@ button:active {
 
 .res-stat {
   flex: 1;
-  min-width: 90px;
+  min-width: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.85rem 0.5rem;
+  padding: 0.75rem 0.5rem;
   border-right: 1px solid #e2e8f0;
 }
 
@@ -1133,14 +1134,14 @@ button:active {
 
 .res-stat-num {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #2563eb;
   line-height: 1;
 }
 
 .res-stat-label {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1150,10 +1151,10 @@ button:active {
 
 .research-img-col {
   flex-shrink: 0;
-  width: 230px;
+  width: 180px;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.75rem;
 }
 
 .research-img-col img {
@@ -1164,8 +1165,8 @@ button:active {
   display: block;
 }
 
-.research-img-col img:first-child { height: 220px; object-position: center top; }
-.research-img-col img:last-child  { height: 155px; object-position: center center; }
+.research-img-col img:first-child { height: 160px; object-position: center top; }
+.research-img-col img:last-child  { height: 120px; object-position: center center; }
 
 @media (max-width: 860px) {
   .research-card { flex-direction: column-reverse; }
@@ -1174,6 +1175,5 @@ button:active {
     flex-direction: row;
   }
   .research-img-col img:first-child,
-  .research-img-col img:last-child { flex: 1; height: 180px; }
-}
+  .research-img-col img:last-child { flex: 1; height: 140px; }
 }
