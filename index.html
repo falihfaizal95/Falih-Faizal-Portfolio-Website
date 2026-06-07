@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/style.css?v=6.0">
+    <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
 </head>
 <body>
     <nav class="sticky-nav">
@@ -66,7 +67,9 @@
           <span><i class="fas fa-file-alt"></i>&nbsp; Falih Faizal — Resume</span>
           <button class="resume-modal-close" id="resumeModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
         </div>
-        <iframe src="https://docs.google.com/viewer?url=https://falihfaizal95.github.io/Falih_Faizal_Resume.pdf&embedded=true" title="Falih Faizal Resume"></iframe>
+        <div class="resume-pdf-container" id="resumePdfContainer">
+          <div class="resume-pdf-loading"><i class="fas fa-spinner fa-spin"></i> Loading resume…</div>
+        </div>
       </div>
     </div>
 
@@ -636,16 +639,50 @@
     </script>
 
     <script>
-      // Resume modal
-      const resumeModal   = document.getElementById('resumeModal');
-      const resumeCardBtn = document.getElementById('resumeCardBtn');
-      const resumeOverlay = document.getElementById('resumeModalOverlay');
-      const resumeClose   = document.getElementById('resumeModalClose');
+      // Resume modal with PDF.js renderer
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+
+      const resumeModal     = document.getElementById('resumeModal');
+      const resumeCardBtn   = document.getElementById('resumeCardBtn');
+      const resumeOverlay   = document.getElementById('resumeModalOverlay');
+      const resumeClose     = document.getElementById('resumeModalClose');
+      const resumeContainer = document.getElementById('resumePdfContainer');
+      let pdfRendered = false;
+
+      async function renderResumePDF() {
+        if (pdfRendered) return;
+        pdfRendered = true;
+        try {
+          const pdf = await pdfjsLib.getDocument('Falih_Faizal_Resume.pdf').promise;
+          resumeContainer.innerHTML = '';
+          for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const canvas = document.createElement('canvas');
+            canvas.className = 'resume-pdf-page';
+            resumeContainer.appendChild(canvas);
+            const baseViewport = page.getViewport({ scale: 1 });
+            const scale = (resumeContainer.clientWidth - 32) / baseViewport.width;
+            const viewport = page.getViewport({ scale });
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width  = viewport.width  * dpr;
+            canvas.height = viewport.height * dpr;
+            canvas.style.width  = viewport.width  + 'px';
+            canvas.style.height = viewport.height + 'px';
+            const ctx = canvas.getContext('2d');
+            ctx.scale(dpr, dpr);
+            await page.render({ canvasContext: ctx, viewport }).promise;
+          }
+        } catch (err) {
+          resumeContainer.innerHTML = '<p style="color:#64748b;padding:2rem;text-align:center">Could not load PDF. <a href="Falih_Faizal_Resume.pdf" target="_blank">Open directly ↗</a></p>';
+        }
+      }
 
       function openResume() {
         resumeModal.classList.add('active');
         resumeModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        renderResumePDF();
       }
       function closeResume() {
         resumeModal.classList.remove('active');
