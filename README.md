@@ -5,7 +5,7 @@ In this assignment, you will style a resume website using CSS.
 
 ---
 
-## Provided Files
+##Files
 
 - `style.css`: a template css file linked in index.html and contact.html 
 - `index.html`: a template shell with css file linked
