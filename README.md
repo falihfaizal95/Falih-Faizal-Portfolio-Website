@@ -1,52 +1,55 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/lPo0jEug)
-# CSS Resume Assignment
+# Falih Faizal — Portfolio Website
 
-In this assignment, you will style a resume website using CSS. 
+> Personal portfolio built with HTML, CSS, and JavaScript — deployed via GitHub Pages.
+
+**Live site:** https://falihfaizal95.github.io/Falih-Faizal-Portfolio-Website/
+
+---
+
+## About
+
+CS student at the University of Georgia (B.S. Computer Science | AI Certification, Dec 2026). This site showcases my experience, projects, and resume.
 
 ---
 
-##Files
+## Experience
 
-- `style.css`: a template css file linked in index.html and contact.html 
-- `index.html`: a template shell with css file linked
-- `contact.html`: a template shell with css file linked.
+| Role | Company | Period |
+|------|---------|--------|
+| Data Engineering Intern | Bell Flight (Textron) | May 2026 – Present |
+| Undergraduate Researcher | UGA Agricultural Robotics Lab | Aug 2025 – Present |
+| IT Infrastructure Intern | Trinity Health | May – Aug 2025 |
+| Front-End Engineering Intern | FWE | Jan – May 2025 |
+| IT Intern | SolutionZ Inc. | Aug 2022 – Feb 2023 |
 
 ---
-## Part 1: Project Setup
 
-- Copy the contents of your completed `index.html` from the html assignment into the provided `index.html` template. (Keep the link to style.css.)
-- Copy the contents of your completed `contact.html` from the html assignment into the provided `contact.html` template file. (Keep the link to style.css.)
-- Copy the images from your completed html project to the images folder
------------
-## Part 2: Create!
+## Projects
 
-Style your cv following these [step-by-step instructions](https://docs.google.com/document/d/1_Zpam8eycWh1wazH-_V9HGNCaHtEF6mf9KnPqqevdew/edit?usp=sharing). (20 pts)
--------------------
-### Part 3: Testing locally
+**SeatScout** — Full-stack ticket aggregation platform integrating Ticketmaster, StubHub, SeatGeek, and Vivid Seats. Compares 250,000+ tickets in real time; saves users ~$47/ticket on average. Built with Next.js, React, and Clerk auth.
 
-After you have completed the style.css file.  You may run the test scripts locally by:
+**StockScope** — Cross-platform stock research app (React Native / Expo + Node.js/Express) with real-time market data, watchlists, and Firebase auth. Covers 1,000+ symbols; caching cuts external API calls by ~40%.
 
-1. Install the tools by running:
+**LectureAI** — Next.js 14 + TypeScript app that converts lecture recordings and YouTube videos into AI study notes, quizzes, and key-term definitions. 95%+ transcription accuracy; scaled to 500+ uploads across 100+ students.
 
-   `npm install`
+---
 
-2. Run the test scripts:
-   
-   `npm test`
+## Tech Stack
 
-3. Repeat `npm test` until all tests are passed.
+`Java` `Python` `JavaScript` `TypeScript` `C` `SQL` `HTML/CSS`  
+`React` `Next.js` `Node.js` `React Native` `Tailwind CSS` `REST APIs`  
+`Databricks` `Azure` `Firebase` `Supabase` `MongoDB` `Vercel` `Git`
 
-### 🧭 Part 4: Publish your cv on your personal GitHub pages
+---
 
-1. **Publish your CV on GitHub pages **
+## Resume
 
-You are to publish your CV to your own GitHub pages site. This is **NOT** your classroom repo created in our CSCI4300-Web-Programming organization. [instructions](https://docs.google.com/document/d/1_Zpam8eycWh1wazH-_V9HGNCaHtEF6mf9KnPqqevdew/edit?usp=sharing) for publishing on GitHub are linked.
+[Download Resume (PDF)](./Falih_Faizal_Resume.pdf)
 
-2. **Provide the link on the class Google sheet** 
+---
 
-The link to the Google sheet is provided in the instructions sheet linked above.
+## Contact
 
-
-
-
+- Email: falih.faizal95@gmail.com
+- LinkedIn: [linkedin.com/in/falih-faizal-200762236](https://linkedin.com/in/falih-faizal-200762236/)
 
